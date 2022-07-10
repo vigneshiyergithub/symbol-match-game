@@ -1,0 +1,58 @@
+.game-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.game-board {
+  display: grid;
+
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  background-color: #2196f3;
+  padding: 10px;
+}
+
+.game-board-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  width: 10rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.item-matched {
+  background-color: lightgreen;
+}
+
+.game-board-score {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.game-container-btn > button {
+  padding: 15px;
+  background-color: #2196f3;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.opened {
+  animation: animation 2s;
+  cursor: not-allowed;
+}
+
+@keyframes animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
